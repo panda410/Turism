@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trasee — Vinăria Tronciu</title>
+  <meta name="description" content="Trasee prin podgorie și tururi ale cramei la Vinăria Tronciu, satul Pereni, comuna Pașcani.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="trasee">
+
+  <div class="preloader" aria-hidden="true">
+    <svg viewBox="0 0 90 130">
+      <defs><clipPath id="bol"><path d="M16 10h58l-3 30a26 26 0 0 1-52 0Z"/></clipPath></defs>
+      <g clip-path="url(#bol)"><rect class="wine-fill" x="0" y="30" width="90" height="50"/></g>
+      <path class="glass" d="M16 10h58l-3 30a26 26 0 0 1-52 0Z M45 66v44 M27 114h36"/>
+    </svg>
+    <p>Vinăria Tronciu</p>
+  </div>
+  <div class="scroll-progress"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo logo--brand" aria-label="Vinăria Tronciu — acasă">
+        <span class="logo__badge" data-logo><img src="imagini/logo-tronciu.jpg" alt="Tronciu"></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Meniu principal">
+        <a href="index.html" data-link="acasa">Acasă</a>
+        <a href="trasee.html" data-link="trasee">Trasee</a>
+        <a href="galerie.html" data-link="galerie">Galerie</a>
+        <a href="cazare.html" data-link="cazare">Cazare</a>
+        <a href="contact.html" data-link="contact" class="nav__cta">Contact</a>
+      </nav>
+      <button class="burger" aria-label="Deschide meniul" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__bg"></div>
+      <div class="container">
+        <p class="kicker">Vizita la cramă</p>
+        <h1>Trasee și experiențe</h1>
+        <p>De la întâmpinarea oaspeților și degustare, până la plimbări prin podgorii și prin sat cu căruța.</p>
+        <nav class="breadcrumb" aria-label="Navigare"><a href="index.html">Acasă</a><span>/</span><span>Trasee</span></nav>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path class="wave__back" d="M-100 40 C240 80 480 0 720 30 S1200 70 1540 30 V80 H-100Z"/><path d="M0 55 C300 20 520 80 760 50 S1180 20 1440 55 V80 H0Z"/></svg>
+    </section>
+
+    <!-- ===== HARTA ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="kicker">Harta vizitei</p>
+          <h2>O zi la Crama Tronciu</h2>
+          <svg class="vine" viewBox="0 0 150 26" aria-hidden="true"><path d="M2 13c18-12 30 12 48 0s30-12 48 0 30 12 48 0"/><circle cx="75" cy="13" r="4"/></svg>
+          <p>Toate experiențele pornesc de la vinărie și sunt ghidate în română sau rusă. Apasă pe un număr pentru detalii.</p>
+        </div>
+
+        <div class="map reveal reveal--zoom">
+          <svg viewBox="0 0 1000 380" role="img" aria-label="Hartă schematică a traseelor Vinăriei Tronciu">
+            <circle class="map-sun" cx="850" cy="78" r="40"/>
+            <g class="map-cloud"><ellipse cx="180" cy="70" rx="60" ry="17"/><ellipse cx="215" cy="57" rx="38" ry="19"/></g>
+            <g class="map-cloud map-cloud--2"><ellipse cx="540" cy="52" rx="48" ry="13"/><ellipse cx="568" cy="42" rx="30" ry="15"/></g>
+            <path class="map-hill map-hill--1" d="M0 200 C160 120 300 190 450 150 S760 70 1000 160 V380 H0Z"/>
+            <path class="map-hill map-hill--2" d="M0 260 C200 200 360 260 560 220 S860 180 1000 240 V380 H0Z"/>
+            <g class="map-rows">
+              <path d="M40 290 C200 255 380 290 560 262"/>
+              <path d="M60 312 C240 280 420 312 620 285"/>
+              <path d="M600 250 C720 225 850 215 980 245"/>
+              <path d="M640 275 C760 250 880 245 990 270"/>
+            </g>
+            <path class="map-hill map-hill--3" d="M0 335 C220 305 420 345 640 320 S900 305 1000 335 V380 H0Z"/>
+            <path class="map-path map-path--base" d="M70 340 C190 345 230 270 340 280 S500 330 590 270 S720 160 820 190 S930 130 960 90"/>
+            <path class="map-path map-path--draw" d="M70 340 C190 345 230 270 340 280 S500 330 590 270 S720 160 820 190 S930 130 960 90"/>
+            <g class="map-start" transform="translate(70 340)"><circle r="9"/><text x="16" y="-12">Start · Vinăria</text></g>
+            <g id="pins"></g>
+          </svg>
+          <ol class="map-legend" id="hartaLegenda"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LISTA TRASEE ===== -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="trails" id="listaTrasee"></div>
+      </div>
+    </section>
+
+    <!-- ===== SFATURI ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="kicker">Înainte de vizită</p>
+          <h2>Bine de știut</h2>
+          <svg class="vine" viewBox="0 0 150 26" aria-hidden="true"><path d="M2 13c18-12 30 12 48 0s30-12 48 0 30 12 48 0"/><circle cx="75" cy="13" r="4"/></svg>
+        </div>
+        <ul class="tips" id="sfaturi"></ul>
+        <div class="center reveal"><a href="contact.html" class="btn btn--primary">Rezervă o vizită</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <svg class="wave wave--top" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 55 C300 20 520 80 760 50 S1180 20 1440 55 V80 H0Z"/></svg>
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#7a1f35"/><circle cx="24" cy="24" r="19.5" fill="none" stroke="#e8c77f" stroke-width="1" stroke-dasharray="2 3"/><path d="M17 11h14l-.6 7a6.4 6.4 0 0 1-12.8 0Z" fill="none" stroke="#e8c77f" stroke-width="2" stroke-linejoin="round"/><path d="M17.9 16.5h12.2l-.3 1.6a5.9 5.9 0 0 1-11.6 0Z" fill="#e8c77f"/><path d="M24 24.5v9M19.5 34.5h9" stroke="#e8c77f" stroke-width="2" stroke-linecap="round"/></svg>
+          <span data-site="nume">Vinăria Tronciu</span>
+        </a>
+        <p data-site="slogan"></p>
+        <div class="footer__logo" data-logo></div>
+      </div>
+      <div>
+        <h4>Navigare</h4>
+        <ul>
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="trasee.html">Trasee</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="cazare.html">Cazare</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li data-site="localitate"></li>
+          <li><a data-tel data-site="telefon" href="#"></a></li>
+          <li><a data-mail data-site="email" href="#"></a></li>
+          <li><a data-fb href="#" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Program</h4>
+        <p data-site="program"></p>
+        <p style="margin-top:1rem"><a href="contact.html" class="btn btn--gold btn--sm">Rezervă acum</a></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-an></span> Vinăria Tronciu · satul Pereni, comuna Pașcani</span>
+      <span>Proiect realizat de <em data-site="autor">Galben Andrei</em></span>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Înapoi sus">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+  </button>
+
+  <!-- copia bazei de date (funcționează și cu dublu-click pe pagină) -->
+  <script src="data/date.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

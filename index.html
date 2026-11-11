@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinăria Tronciu — Pereni, comuna Pașcani</title>
+  <meta name="description" content="Vinăria Tronciu din satul Pereni, comuna Pașcani: degustări de vin, trasee prin podgorie, galerie foto și cazare.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="acasa">
+
+  <!-- Preloader: paharul se umple cu vin -->
+  <div class="preloader" aria-hidden="true">
+    <svg viewBox="0 0 90 130">
+      <defs><clipPath id="bol"><path d="M16 10h58l-3 30a26 26 0 0 1-52 0Z"/></clipPath></defs>
+      <g clip-path="url(#bol)"><rect class="wine-fill" x="0" y="30" width="90" height="50"/></g>
+      <path class="glass" d="M16 10h58l-3 30a26 26 0 0 1-52 0Z M45 66v44 M27 114h36"/>
+    </svg>
+    <p>Vinăria Tronciu</p>
+  </div>
+  <div class="scroll-progress"></div>
+
+  <!-- ===== ANTET ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo logo--brand" aria-label="Vinăria Tronciu — acasă">
+        <span class="logo__badge" data-logo><img src="imagini/logo-tronciu.jpg" alt="Tronciu"></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Meniu principal">
+        <a href="index.html" data-link="acasa">Acasă</a>
+        <a href="trasee.html" data-link="trasee">Trasee</a>
+        <a href="galerie.html" data-link="galerie">Galerie</a>
+        <a href="cazare.html" data-link="cazare">Cazare</a>
+        <a href="contact.html" data-link="contact" class="nav__cta">Contact</a>
+      </nav>
+      <button class="burger" aria-label="Deschide meniul" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <!-- videoclipul Tronciu.mp4 (setat în data/date.json) -->
+      <div class="hero__media" id="heroMedia"></div>
+      <div class="hero__overlay"></div>
+      <div class="bubbles" id="bubbles"></div>
+
+      <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="hero__kicker">Satul Pereni · comuna Pașcani</p>
+        <h1 class="hero__title" data-site="nume">Vinăria Tronciu</h1>
+        <p class="hero__text" data-site="slogan">Vin din inima dealurilor de la Pereni.</p>
+        <div class="hero__actions">
+          <a href="trasee.html" class="btn btn--primary">Descoperă traseele
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </a>
+          <a href="cazare.html" class="btn btn--ghost">Cazare &amp; degustări</a>
+        </div>
+      </div>
+
+      <!-- cadrul în care rulează videoclipul (pe telefon devine fundal) -->
+      <figure class="hero__film" id="heroFilm"></figure>
+      </div>
+
+      <div class="container hero__bottom">
+        <p class="hero__caption">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span id="heroCaption"></span>
+        </p>
+      </div>
+
+      <a href="#despre" class="scroll-hint" aria-label="Derulează în jos"></a>
+      <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path class="wave__back" d="M-100 40 C240 80 480 0 720 30 S1200 70 1540 30 V80 H-100Z"/><path d="M0 55 C300 20 520 80 760 50 S1180 20 1440 55 V80 H0Z"/></svg>
+    </section>
+
+    <!-- ===== DESPRE ===== -->
+    <section class="section" id="despre">
+      <div class="container">
+        <div class="about">
+          <div class="collage" id="collage">
+            <div class="seal reveal reveal--zoom" style="--d:.6s" aria-hidden="true">
+              <svg class="seal__text" viewBox="0 0 132 132"><defs><path id="cercSigiliu" d="M66 66m-50 0a50 50 0 1 1 100 0a50 50 0 1 1-100 0"/></defs><text><textPath href="#cercSigiliu">Vinăria Tronciu • Pereni • Pașcani •</textPath></text></svg>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h10l-.5 6.5a4.5 4.5 0 0 1-9 0L7 2Z"/><path d="M7.3 6h9.4"/><path d="M12 13v8"/><path d="M8 21h8"/></svg>
+            </div>
+          </div>
+
+          <div class="about__text">
+            <div class="sec-head sec-head--left reveal">
+              <p class="kicker">Bine ai venit</p>
+              <h2>O vinărie de familie, din 1997</h2>
+              <svg class="vine" viewBox="0 0 150 26" aria-hidden="true"><path d="M2 13c18-12 30 12 48 0s30-12 48 0 30 12 48 0"/><circle cx="75" cy="13" r="4"/></svg>
+            </div>
+            <div id="despreText" class="reveal" style="--d:.15s"></div>
+            <p class="about__sign reveal" style="--d:.3s" id="despreSemnatura"></p>
+          </div>
+        </div>
+
+        <div class="stats" id="stats"></div>
+      </div>
+    </section>
+
+    <!-- ===== CITAT ===== -->
+    <section class="section section--sand quote-section">
+      <div class="container quote" id="citat"></div>
+    </section>
+
+    <!-- ===== AVANTAJE ===== -->
+    <section class="section section--wine">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="kicker">De ce să ne vizitezi</p>
+          <h2>O zi la vinărie, ca la prieteni</h2>
+          <svg class="vine" viewBox="0 0 150 26" aria-hidden="true"><path d="M2 13c18-12 30 12 48 0s30-12 48 0 30 12 48 0"/><circle cx="75" cy="13" r="4"/></svg>
+          <p>Vin făcut cu dăruire, oameni primitori și tradiții moldovenești păstrate cu grijă.</p>
+        </div>
+        <ul class="features" id="avantaje"></ul>
+      </div>
+    </section>
+
+    <!-- ===== VINURILE ===== -->
+    <section class="section" id="vinurile">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="kicker">Portofoliu</p>
+          <h2>Vinurile Tronciu</h2>
+          <svg class="vine" viewBox="0 0 150 26" aria-hidden="true"><path d="M2 13c18-12 30 12 48 0s30-12 48 0 30 12 48 0"/><circle cx="75" cy="13" r="4"/></svg>
+          <p>Vinuri seci și demiseci, albe și roșii, realizate „de la butuc până la sticlă” în spiritul tradiției de familie.</p>
+        </div>
+        <div class="photo-row" id="vinuriFoto"></div>
+        <div class="wines" id="vinuri"></div>
+
+        <div class="varieties reveal">
+          <p><strong>Soiurile cramei</strong> — albe și roșii, autohtone și internaționale, cultivate lângă izvoarele râului Lăpușnița:</p>
+          <ul class="varieties__list" id="soiuri"></ul>
+        </div>
+
+        <div class="sec-head sec-head--small reveal">
+          <h3>Unde găsești vinurile noastre</h3>
+        </div>
+        <ul class="shops" id="distributie"></ul>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENȚE RECOMANDATE ===== -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="kicker">Vizita la cramă</p>
+          <h2>Experiențe la vinărie</h2>
+          <svg class="vine" viewBox="0 0 150 26" aria-hidden="true"><path d="M2 13c18-12 30 12 48 0s30-12 48 0 30 12 48 0"/><circle cx="75" cy="13" r="4"/></svg>
+          <p>De la întâmpinarea oaspeților până la plimbarea cu căruța prin sat — o zi întreagă de povești.</p>
+        </div>
+        <div class="cards" id="traseePreview"></div>
+        <div class="center reveal"><a href="trasee.html" class="btn btn--primary">Toate experiențele</a></div>
+      </div>
+    </section>
+
+    <!-- ===== EVENIMENTE (cu al doilea videoclip) ===== -->
+    <section class="section" id="evenimente-sectiune">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="kicker">Sărbători la vinărie</p>
+          <h2>Evenimente la Tronciu</h2>
+          <svg class="vine" viewBox="0 0 150 26" aria-hidden="true"><path d="M2 13c18-12 30 12 48 0s30-12 48 0 30 12 48 0"/><circle cx="75" cy="13" r="4"/></svg>
+          <p>Hore în curte, cules de struguri, concerte la apus și târguri de vin — vinăria prinde viață împreună cu oaspeții ei.</p>
+        </div>
+        <div class="events" id="evenimente"></div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta">
+      <div class="cta__bg" id="ctaBg"></div>
+      <div class="container reveal">
+        <p class="kicker">Rezervă-ți locul</p>
+        <h2>Un pahar de vin te așteaptă la Pereni</h2>
+        <p>Vizitele au loc doar cu rezervare prealabilă. Sună-ne sau scrie-ne și pregătim totul pentru grupul tău.</p>
+        <div class="cta__actions">
+          <a href="cazare.html" class="btn btn--gold">Vezi prețurile</a>
+          <a href="contact.html" class="btn btn--ghost">Scrie-ne</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERIE (selecție) ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="kicker">Momente surprinse</p>
+          <h2>Din galeria vinăriei</h2>
+          <svg class="vine" viewBox="0 0 150 26" aria-hidden="true"><path d="M2 13c18-12 30 12 48 0s30-12 48 0 30 12 48 0"/><circle cx="75" cy="13" r="4"/></svg>
+          <p>Apasă pe o fotografie pentru a o vedea mărită.</p>
+        </div>
+        <div class="bento" id="galerieTeaser"></div>
+        <div class="center reveal"><a href="galerie.html" class="btn btn--primary">Vezi toată galeria</a></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== SUBSOL ===== -->
+  <footer class="footer">
+    <svg class="wave wave--top" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 55 C300 20 520 80 760 50 S1180 20 1440 55 V80 H0Z"/></svg>
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#7a1f35"/><circle cx="24" cy="24" r="19.5" fill="none" stroke="#e8c77f" stroke-width="1" stroke-dasharray="2 3"/><path d="M17 11h14l-.6 7a6.4 6.4 0 0 1-12.8 0Z" fill="none" stroke="#e8c77f" stroke-width="2" stroke-linejoin="round"/><path d="M17.9 16.5h12.2l-.3 1.6a5.9 5.9 0 0 1-11.6 0Z" fill="#e8c77f"/><path d="M24 24.5v9M19.5 34.5h9" stroke="#e8c77f" stroke-width="2" stroke-linecap="round"/></svg>
+          <span data-site="nume">Vinăria Tronciu</span>
+        </a>
+        <p data-site="slogan"></p>
+        <div class="footer__logo" data-logo></div>
+      </div>
+      <div>
+        <h4>Navigare</h4>
+        <ul>
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="trasee.html">Trasee</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="cazare.html">Cazare</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li data-site="localitate"></li>
+          <li><a data-tel data-site="telefon" href="#"></a></li>
+          <li><a data-mail data-site="email" href="#"></a></li>
+          <li><a data-fb href="#" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Program</h4>
+        <p data-site="program"></p>
+        <p style="margin-top:1rem"><a href="contact.html" class="btn btn--gold btn--sm">Rezervă acum</a></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-an></span> Vinăria Tronciu · satul Pereni, comuna Pașcani</span>
+      <span>Proiect realizat de <em data-site="autor">Galben Andrei</em></span>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Înapoi sus">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+  </button>
+
+  <!-- copia bazei de date (funcționează și cu dublu-click pe pagină) -->
+  <script src="data/date.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

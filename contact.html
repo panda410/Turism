@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Vinăria Tronciu</title>
+  <meta name="description" content="Contactează Vinăria Tronciu din satul Pereni, comuna Pașcani, pentru rezervări, degustări și tururi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+  <div class="preloader" aria-hidden="true">
+    <svg viewBox="0 0 90 130">
+      <defs><clipPath id="bol"><path d="M16 10h58l-3 30a26 26 0 0 1-52 0Z"/></clipPath></defs>
+      <g clip-path="url(#bol)"><rect class="wine-fill" x="0" y="30" width="90" height="50"/></g>
+      <path class="glass" d="M16 10h58l-3 30a26 26 0 0 1-52 0Z M45 66v44 M27 114h36"/>
+    </svg>
+    <p>Vinăria Tronciu</p>
+  </div>
+  <div class="scroll-progress"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo logo--brand" aria-label="Vinăria Tronciu — acasă">
+        <span class="logo__badge" data-logo><img src="imagini/logo-tronciu.jpg" alt="Tronciu"></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Meniu principal">
+        <a href="index.html" data-link="acasa">Acasă</a>
+        <a href="trasee.html" data-link="trasee">Trasee</a>
+        <a href="galerie.html" data-link="galerie">Galerie</a>
+        <a href="cazare.html" data-link="cazare">Cazare</a>
+        <a href="contact.html" data-link="contact" class="nav__cta">Contact</a>
+      </nav>
+      <button class="burger" aria-label="Deschide meniul" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__bg"></div>
+      <div class="container">
+        <p class="kicker">Hai să vorbim</p>
+        <h1>Contact</h1>
+        <p>Vizitele au loc doar cu rezervare prealabilă. Scrie-ne sau sună-ne pentru degustări, cazare și evenimente.</p>
+        <nav class="breadcrumb" aria-label="Navigare"><a href="index.html">Acasă</a><span>/</span><span>Contact</span></nav>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path class="wave__back" d="M-100 40 C240 80 480 0 720 30 S1200 70 1540 30 V80 H-100Z"/><path d="M0 55 C300 20 520 80 760 50 S1180 20 1440 55 V80 H0Z"/></svg>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact">
+          <div>
+            <div class="sec-head sec-head--left reveal">
+              <p class="kicker">Te așteptăm</p>
+              <h2>Unde ne găsești</h2>
+              <svg class="vine" viewBox="0 0 150 26" aria-hidden="true"><path d="M2 13c18-12 30 12 48 0s30-12 48 0 30 12 48 0"/><circle cx="75" cy="13" r="4"/></svg>
+              <p>Crama Tronciu se află în satul Pereni, raionul Hîncești, lângă izvoarele râului Lăpușnița.</p>
+            </div>
+            <div class="info-cards" id="contactInfo"></div>
+            <h3 class="contact__subtitle reveal">Informații utile</h3>
+            <ul class="useful" id="informatii"></ul>
+          </div>
+
+          <form class="form reveal reveal--right" id="formular" novalidate>
+            <h2>Trimite-ne un mesaj</h2>
+
+            <div class="field">
+              <label for="nume">Nume și prenume *</label>
+              <input type="text" id="nume" name="nume" autocomplete="name" placeholder="ex. Ion Popescu">
+              <span class="field__err"></span>
+            </div>
+            <div class="field">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="nume@exemplu.com">
+              <span class="field__err"></span>
+            </div>
+            <div class="field">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="+373 …">
+              <span class="field__err"></span>
+            </div>
+            <div class="field">
+              <label for="cazareSelect">Sunt interesat de</label>
+              <select id="cazareSelect" name="cazare"></select>
+              <span class="field__err"></span>
+            </div>
+            <div class="field">
+              <label for="sosire">Data vizitei / sosirii</label>
+              <input type="date" id="sosire" name="sosire">
+              <span class="field__err"></span>
+            </div>
+            <div class="field">
+              <label for="plecare">Data plecării (pentru cazare)</label>
+              <input type="date" id="plecare" name="plecare">
+              <span class="field__err"></span>
+            </div>
+            <div class="field field--full">
+              <label for="mesaj">Mesaj *</label>
+              <textarea id="mesaj" name="mesaj" placeholder="Câte persoane sunteți, în ce limbă doriți turul (română / rusă), aveți nevoie de transport din Chișinău…"></textarea>
+              <span class="field__err"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Trimite mesajul</button>
+
+            <div class="success" id="succes" role="status" aria-live="polite">
+              <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46"/><path d="M30 52l13 13 27-29"/></svg>
+              <h3>Mulțumim!</h3>
+              <p>Mesajul tău a fost primit. Te contactăm în cel mai scurt timp pentru confirmare.</p>
+              <button type="button" class="btn btn--primary btn--sm" id="succesInchide">Trimite alt mesaj</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="map-embed reveal">
+          <iframe id="harta" title="Hartă: satul Pereni, comuna Pașcani" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <svg class="wave wave--top" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 55 C300 20 520 80 760 50 S1180 20 1440 55 V80 H0Z"/></svg>
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#7a1f35"/><circle cx="24" cy="24" r="19.5" fill="none" stroke="#e8c77f" stroke-width="1" stroke-dasharray="2 3"/><path d="M17 11h14l-.6 7a6.4 6.4 0 0 1-12.8 0Z" fill="none" stroke="#e8c77f" stroke-width="2" stroke-linejoin="round"/><path d="M17.9 16.5h12.2l-.3 1.6a5.9 5.9 0 0 1-11.6 0Z" fill="#e8c77f"/><path d="M24 24.5v9M19.5 34.5h9" stroke="#e8c77f" stroke-width="2" stroke-linecap="round"/></svg>
+          <span data-site="nume">Vinăria Tronciu</span>
+        </a>
+        <p data-site="slogan"></p>
+        <div class="footer__logo" data-logo></div>
+      </div>
+      <div>
+        <h4>Navigare</h4>
+        <ul>
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="trasee.html">Trasee</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="cazare.html">Cazare</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li data-site="localitate"></li>
+          <li><a data-tel data-site="telefon" href="#"></a></li>
+          <li><a data-mail data-site="email" href="#"></a></li>
+          <li><a data-fb href="#" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Program</h4>
+        <p data-site="program"></p>
+        <p style="margin-top:1rem"><a href="contact.html" class="btn btn--gold btn--sm">Rezervă acum</a></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-an></span> Vinăria Tronciu · satul Pereni, comuna Pașcani</span>
+      <span>Proiect realizat de <em data-site="autor">Galben Andrei</em></span>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Înapoi sus">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+  </button>
+
+  <!-- copia bazei de date (funcționează și cu dublu-click pe pagină) -->
+  <script src="data/date.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
